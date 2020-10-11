@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>add</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+   <script src="https://use.fontawesome.com/cb65432252.js"></script>
+</head>
+<style type="text/css">
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 30px;
+  color: #777;
+  background: #4CAF50;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#movie input[type="text"],
+#movie input[type="email"],
+#movie input[type="tel"],
+#movie input[type="url"],
+#movie button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#movie {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#movie h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#movie h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+#movie a{
+  text-decoration: none;
+  color: #777;
+}
+
+#movie a:hover{
+ cursor: pointer;
+  color: #4CAF50;
+}
+
+#movie p {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+
+}
+
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#movie input[type="text"],
+#movie input[type="text"],
+#movie input[type="text"],
+#movie input[type="url"],
+#movie textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#movie input[type="text"]:hover,
+#movie input[type="text"]:hover,
+#movie input[type="text"]:hover,
+#movie input[type="url"]:hover,
+#movie textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+
+#movie button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #4CAF50;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#movie button[type="submit"]:hover {
+  background: #43A047;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#movie button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+#movie input:focus,
+#movie textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+
+</style>
+<body>
+
+<div class="container">  
+  <form id="movie" action="/insert" method="POST">
+    <h3>Add your favorite movie</h3>
+    <h4>If there is any problem then contact us</h4>
+    <fieldset>
+    <input placeholder="Movie Name"  type="text" name="name" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Cast" type="text"  name="actor" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Year" type="text" name="year" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Poster (URL)" type="url" name="poster" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset> 
+    <p><a href="http://myflaskmovieapp-env.eba-qnjzqc2j.us-east-2.elasticbeanstalk.com/"><i class="fa fa-video-camera" aria-hidden="true"></i> Movie Box</a></p>
+  </form>
+</div>
+</body>
+</html>
